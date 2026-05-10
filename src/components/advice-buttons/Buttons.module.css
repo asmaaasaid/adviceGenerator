@@ -1,0 +1,38 @@
+.adviceButtons button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+  .adviceButtons button img{
+  width: 25px;
+}
+.copyBtn{
+  opacity: 0;
+}
+/* .container:hover .copyBtn{
+  opacity: 1;
+} */
+:global(.container:hover) .copyBtn {
+  opacity: 1;
+}
+ .adviceButtons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  padding-block: 0px;
+  
+}
+.darkFavIcon{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: fit-content;
+}
+.styleToggle{
+  color: var(--text-color);
+  text-decoration: none;
+}

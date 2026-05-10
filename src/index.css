@@ -1,0 +1,49 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@800&display=swap");
+
+:root {
+  /* dark */
+  --text-color: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --card-color: hsl(217, 19%, 24%);
+  /* --bg-color: hsl(217, 19%, 24%); */
+  --bg-color: #202733
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button{
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 0.1px);
+  /* transition: all 0.3s ease-in; */
+}
+
+.light-mode {
+  --bg-color: hsl(0, 0%, 95%);
+  --card-color: white;
+  --text-color: hsl(217, 19%, 24%);
+  --neon-green: hsl(150, 97%, 59%);
+}
+
+@media (prefers-color-scheme: light){
+  :root{
+  --bg-color: hsl(0, 0%, 95%);
+  --card-color: white;
+  --text-color: hsl(217, 19%, 24%);
+  --neon-green: hsl(150, 97%, 59%); 
+  }
+
+}

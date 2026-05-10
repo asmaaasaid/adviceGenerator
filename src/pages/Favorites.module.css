@@ -1,0 +1,22 @@
+.favAdvice{
+    padding-block: 10px;
+    border-bottom: 1px solid var(--text-color);
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+.backBtn{
+    background-color: var(--neon-green);
+    color: var(--bg-color);
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+}
+
+h3{
+    color: var(--neon-green);
+}
+.favHeader{
+    display: flex;
+    justify-content: space-between;
+}

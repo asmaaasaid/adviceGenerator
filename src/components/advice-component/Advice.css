@@ -1,0 +1,99 @@
+.container img.dice, .container img.pause {
+  max-width: 100%;
+}
+
+button {
+  user-select: none;
+}
+
+
+
+.container {
+  background-color: var(--card-color);
+  padding: 1.25rem 1.25rem 3rem;
+  color: #ffffff;
+  border-radius: 1.25rem;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  color: var(--neon-green);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
+
+.container p {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.container picture img {
+  background-color: var(--grayish-blue);
+  position: relative;
+}
+
+.container picture::before {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background-color: var(--text-color);
+  right: 1.25rem;
+  bottom: 6.9rem;
+  position: absolute;
+  display: block;
+  z-index: 99;
+}
+
+.container picture::after {
+  content: "";
+  width: 45%;
+  height: 1px;
+  background-color: var(--text-color);
+  left: 0;
+  bottom: 0.75rem;
+  position: relative;
+  display: block;
+}
+
+.container div .diceBtn {
+  background-color: var(--neon-green);
+  padding: 1.25rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container div .diceBtn:hover {
+  background-color: hsl(150, 59%, 54%);
+}
+
+
+@media (min-width: 500px) {
+  .container {
+    max-width: 480px;
+  }
+  
+}
+@media (max-width:600px) {
+  .container picture{
+    display: none;
+  }
+  .container p{
+    border-bottom: 0.01rem solid var(--text-color);
+    padding-bottom: 10px;
+  }
+}
