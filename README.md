@@ -24,9 +24,15 @@ A modern advice generator app built with React and Vite.
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/advice-generator-app.git
+git clone git clone https://github.com/your-username/advice-generator-app.git
 
-cd advice-generator-app
+cd advice-generator
+
+npm install
+
+npm run dev
+
+cd advice-generator
 
 npm install
 
