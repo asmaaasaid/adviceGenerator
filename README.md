@@ -21,6 +21,12 @@ A modern advice generator app built with React and Vite.
 - Context API
 - CSS Modules
 
+## API Integration
+
+This application fetches random advice from the Advice Slip API.
+
+https://api.adviceslip.com/
+
 ## Installation
 
 ```bash
